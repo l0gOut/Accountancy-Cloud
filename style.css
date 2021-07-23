@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+header {
+  margin-top: 27px;
+}
+
+h2,
+a,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  margin: 0 14px;
+}
+
+.container.header-button .button {
+  margin: 0 9px;
+  padding: 13px 24px;
+  border-radius: 100px;
+}
+
+.container .button.login {
+  background: white;
+  border: 1px solid black;
+  width: 96px;
+  height: 52px;
+}
+
+.container .button.login,
+.container .button.expert {
+  transition: all 200ms;
+}
+
+.container .button.login:hover {
+  background: black;
+  color: white;
+}
+
+.container .button.expert {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+
+.container .button.expert:hover {
+  background: white;
+  color: black;
+}
