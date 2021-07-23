@@ -65,11 +65,20 @@ a {
   width: 96px;
   height: 52px;
 }
-
 .container .button.login,
-.container .button.expert,
+.container .button.expert {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}
+
 .container-talk-to-us .talk-to-us,
-.description .button button {
+.description .button button,
+.container .button.expert,
+.container .button.login,
+.start-switch button,
+.ac-hub button {
   transition: color 250ms, background-color 250ms;
 }
 
@@ -218,10 +227,10 @@ hr {
 }
 
 .description .card-text {
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
+  font-size: 18px;
   font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .description .button button {
@@ -281,4 +290,166 @@ hr {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+}
+
+.brends {
+  margin-top: 113px;
+}
+
+.brends .text {
+  margin-top: 50px;
+  margin-right: 137px;
+  width: 50%;
+}
+
+.brends .text h2 {
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.brends .row .card {
+  border: none;
+}
+
+.brends .row {
+  margin-bottom: 95px;
+}
+
+.ac-hub {
+  padding: 108px 0 78px 0;
+}
+
+.ac-hub h1 {
+  color: black;
+  margin-bottom: 40px;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px;
+}
+
+.ac-hub p {
+  margin-bottom: 79px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+}
+
+.ac-hub button {
+  padding: 12px 31px;
+  background: #f7b2b7;
+  border: 1px solid #f7b2b7;
+  border-radius: 100px;
+  color: black;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.ac-hub button:hover {
+  background: white;
+}
+
+.start-switch {
+  background: #8bd4d6;
+  border-radius: 10px;
+  margin-bottom: 108px;
+}
+
+.start-switch .container {
+  padding: 89px 90px;
+}
+
+.start-switch h1 {
+  color: black;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 56px;
+  font-style: normal;
+  margin-bottom: 18px;
+}
+
+.start-switch p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+}
+
+.start-switch button {
+  border: 1px solid black;
+  border-radius: 100px;
+  background: black;
+  padding: 12px 31px;
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.start-switch button:hover {
+  background: #8bd4d6;
+  color: black;
+}
+
+footer {
+  background: #302e3f;
+}
+
+footer .container-footer {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.container-footer .icon h2 {
+  margin: 0 0 0 18px;
+  color: white;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.container-footer .icon {
+  margin-bottom: 50px;
+}
+
+.container-footer .row {
+  row-gap: 80px;
+}
+
+.container-footer .row .card {
+  border: none;
+  background: #302e3f;
+}
+
+.container-footer .card-title {
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  margin-bottom: 12px;
+}
+
+.container-footer .card-text {
+  color: #c5e9ea;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.container-footer .dmca {
+  column-gap: 27px;
+  color: #c5e9ea;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
 }
