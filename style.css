@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 body {
   margin: 0;
@@ -15,13 +15,42 @@ header {
 h1,
 h2,
 a,
+p,
 button {
   font-family: "Roboto", sans-serif;
 }
 
+button,
 a {
+  cursor: pointer;
+}
+
+.body {
+  width: 100%;
+}
+
+.navigation a {
   margin: 0 14px;
   font-weight: 400;
+  position: relative;
+}
+
+.navigation a::after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: black;
+  transition: width 300ms;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10%;
+}
+
+.navigation a:hover::after {
+  width: 100%;
 }
 
 .container.header-button .button {
@@ -39,8 +68,9 @@ a {
 
 .container .button.login,
 .container .button.expert,
-.container-talk-to-us .talk-to-us {
-  transition: color 200ms, background-color 200ms;
+.container-talk-to-us .talk-to-us,
+.description .button button {
+  transition: color 250ms, background-color 250ms;
 }
 
 .container .button.login:hover {
@@ -73,7 +103,6 @@ a {
 
 .finances p {
   margin-top: 27px;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 23px;
@@ -114,8 +143,142 @@ a {
 
 hr {
   top: 688px;
-  height: 1px;
+  height: 2px !important;
   border: none;
-  width: 100vw;
+  width: 100%;
   background: #eaeef2;
+}
+
+.best-finance {
+  margin-top: 211px;
+  margin-bottom: 259px;
+}
+
+.best-finance .header {
+  padding: 0 60px 0 0;
+  margin-bottom: 33px;
+}
+
+.best-finance h1 {
+  font-size: 57px;
+  line-height: 58px;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+}
+
+.best-finance p {
+  font-size: 20px;
+  line-height: 31px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.best-finance p a,
+.description a {
+  color: #305c81;
+}
+
+.best-finance p a:hover,
+.description a:hover {
+  color: #305d81c0;
+}
+
+.description {
+  margin-bottom: 126px;
+}
+
+.description .header {
+  margin-bottom: 82px;
+}
+
+.description h1 {
+  font-size: 58px;
+  line-height: 58px;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+}
+
+.description .row {
+  margin-bottom: 71px;
+}
+
+.description .card {
+  border: none;
+}
+
+.description .card-title {
+  color: black;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.description .card-text {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.description .button button {
+  padding: 12px 31px;
+  border: 1px solid #f7b2b7;
+  background: #f7b2b7;
+  color: black;
+  border-radius: 100px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.description .button button:hover {
+  background: white;
+}
+
+.plans {
+  background: #fdeced;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.plans .header {
+  padding-top: 88px;
+  color: black;
+  margin-bottom: 82px;
+}
+
+.plans .header h1 {
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 58px;
+}
+
+.plans .row .card {
+  border: none;
+  background: #fdeced;
+  padding-bottom: 89px;
+}
+
+.plans .card .card-title {
+  margin-top: 24px;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  color: black;
+}
+
+.plans .card .card-text {
+  margin-top: 10px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
