@@ -8,8 +8,11 @@ body {
 
 header {
   margin-top: 27px;
+  margin-bottom: 92px;
+  font-weight: 700;
 }
 
+h1,
 h2,
 a,
 button {
@@ -18,6 +21,7 @@ button {
 
 a {
   margin: 0 14px;
+  font-weight: 400;
 }
 
 .container.header-button .button {
@@ -34,8 +38,9 @@ a {
 }
 
 .container .button.login,
-.container .button.expert {
-  transition: all 200ms;
+.container .button.expert,
+.container-talk-to-us .talk-to-us {
+  transition: color 200ms, background-color 200ms;
 }
 
 .container .button.login:hover {
@@ -52,4 +57,65 @@ a {
 .container .button.expert:hover {
   background: white;
   color: black;
+}
+
+.finances .text {
+  margin-right: 48px;
+}
+
+.finances h1 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 77px;
+  line-height: 83px;
+  color: black;
+}
+
+.finances p {
+  margin-top: 27px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 23px;
+  line-height: 31px;
+}
+
+.container-talk-to-us {
+  top: 615px;
+  z-index: 1;
+  margin: 0 24px;
+}
+
+.container-talk-to-us h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.container-talk-to-us .talk-to-us {
+  margin-top: 27px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 25px;
+  padding: 18px 31px;
+  border: 1px solid black;
+  border-radius: 100px;
+  background: black;
+  color: white;
+}
+
+.container-talk-to-us .talk-to-us:hover {
+  background: white;
+  color: black;
+}
+
+hr {
+  top: 688px;
+  height: 1px;
+  border: none;
+  width: 100vw;
+  background: #eaeef2;
 }
