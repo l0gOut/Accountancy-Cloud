@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,12 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="scroll.css"
+    <link rel="stylesheet" href="scroll.css" />
+    <link rel="stylesheet" href="hamburgers.css" />
     <script src="bootstrap/js/bootstrap.js"></script>
     <title>Accountancy Cloud</title>
   </head>
   <body>
     <div class="body">
+      <div class="hamburger-container">
+        <button
+          class="hamburger hamburger--squeeze"
+          type="button"
+          id="hamburger"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <div
+          class="container-navigation d-flex flex-column"
+          id="hamburger-navigation"
+        >
+          <a>Home</a>
+          <a>How it work</a>
+          <a>What we do</a>
+          <a>Who we help</a>
+          <a>Resources</a>
+        </div>
+      </div>
       <header>
         <div class="container d-flex">
           <div
@@ -23,14 +45,28 @@
               w-25
             "
           >
-            <div class="container d-flex justify-content-end p-0">
-              <img src="image/Accountancy_Icon_Black.svg" alt="Accountancy icon" />
+            <div
+              class="containerd-flex justify-content-end p-0 accountancy-icon"
+            >
+              <img
+                src="image/Accountancy_Icon_Black.svg"
+                alt="Accountancy icon"
+                class="w-auto h-auto"
+              />
             </div>
             <div class="container d-flex align-items-center">
               <h2 class="m-0 fs-2 fw-bold">Accountancy Cloud</h2>
             </div>
           </div>
-          <div class="container d-flex align-items-center text-nowrap">
+          <div
+            class="
+              container
+              d-flex
+              align-items-center
+              text-nowrap
+              navigation-login
+            "
+          >
             <div class="container d-flex justify-content-end navigation">
               <a>Home</a>
               <a>How it work</a>
@@ -50,14 +86,16 @@
               "
             >
               <button class="button text-nowrap login">Login</button>
-              <button class="button text-nowrap expert">Talk to an Expert</button>
+              <button class="button text-nowrap expert">
+                Talk to an Expert
+              </button>
             </div>
           </div>
         </div>
       </header>
       <div class="container finances">
-        <div class="container d-flex">
-          <div class="container w-50 text">
+        <div class="container d-flex text-image">
+          <div class="container text">
             <h1>Get Your finances right</h1>
             <p>
               Get Your finances right with Accountancy Cloud. We offer the best
@@ -65,16 +103,30 @@
               who want to grow.
             </p>
           </div>
-          <div class="container w-50">
-            <img src="image/Desctop_Accoutancy.png" img="Finances desktop" />
+          <div class="container image">
+            <img
+              src="image/Desctop_Accoutancy.png"
+              alt="Finances desktop"
+              class="w-auto h-auto"
+            />
           </div>
         </div>
-        <div class="container position-absolute p-0 container-talk-to-us">
-          <h4>Switching to us is simple</h4>
-          <button class="talk-to-us">Talk to us</button>
+      </div>
+      <div class="w-100 position-relative container-talk-to-us-fluid">
+        <div class="container position-relative p-0 container-talk-to-us">
+          <div class="container">
+            <div class="container">
+              <div class="container">
+                <h4>Switching to us is simple</h4>
+                <button class="talk-to-us">Talk to us</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="position-absolute w-100 line">
+          <hr />
         </div>
       </div>
-      <hr class="position-absolute" />
       <div
         class="
           container
@@ -84,16 +136,17 @@
           best-finance
         "
       >
-        <div class="container">
-          <img src="image/Decimal_70.png" alt="70%" />
+        <div class="container d-flex justify-content-center">
+          <img src="image/Decimal_70.png" alt="70%" class="w-auto h-auto" />
         </div>
-        <div class="container">
+        <div class="container text">
           <div class="container header">
             <h1>The best finance stack for entrepreneurs</h1>
           </div>
           <p>
             70% of companies switch to us from their DIY or legacy system. Now,
-            get your bookkeeping, tax prep and CFO problems, solved. Complete our
+            get your bookkeeping, tax prep and CFO problems, solved. Complete
+            our
             <a href="/">contact form</a>, and find out why 9 out of 10 customers
             recommend us.
           </p>
@@ -107,27 +160,50 @@
           <div class="col-sm-4">
             <div class="card">
               <div class="card-body">
-                <img src="image/cards/Statistic_Software.svg" alt="Statistic software" class="card-img-top">
+                <img
+                  src="image/cards/Statistic_Software.svg"
+                  alt="Statistic software"
+                  class="card-img-top w-auto h-auto"
+                />
                 <h2 class="card-title">Powerful software</h2>
-                <p class="card-text">Included in our service, each customer gets in-house software to access live <a href="/">financial dashboards</a> and real-time management reports.</p>
+                <p class="card-text">
+                  Included in our service, each customer gets in-house software
+                  to access live <a href="/">financial dashboards</a> and
+                  real-time management reports.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="card">
               <div class="card-body">
-                <img src="image/cards/Track.svg" alt="Track" class="card-img-top">
+                <img
+                  src="image/cards/Track.svg"
+                  alt="Track"
+                  class="card-img-top w-auto h-auto"
+                />
                 <h2 class="card-title">Track cashflow</h2>
-                <p class="card-text">Stay on top of your working capital, <a href="/">taxes</a>, and cashflow, to ensure your business is performing at its best.</p>
+                <p class="card-text">
+                  Stay on top of your working capital, <a href="/">taxes</a>,
+                  and cashflow, to ensure your business is performing at its
+                  best.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="card">
               <div class="card-body">
-                <img src="image/cards/Support.svg" alt="Support" class="card-img-top">
+                <img
+                  src="image/cards/Support.svg"
+                  alt="Support"
+                  class="card-img-top w-auto h-auto"
+                />
                 <h2 class="card-title">Award winning support</h2>
-                <p class="card-text">Expect the best from us. Get a dedicated finance team that will handle all your accounting, R&D credits and CFO needs.</p>
+                <p class="card-text">
+                  Expect the best from us. Get a dedicated finance team that
+                  will handle all your accounting, R&D credits and CFO needs.
+                </p>
               </div>
             </div>
           </div>
@@ -147,27 +223,52 @@
             <div class="col-sm-4">
               <div class="card">
                 <div class="card-body">
-                  <img src="image/cards/Rocket_Mini.svg" alt="Rocket mini" class="card-img-top">
+                  <img
+                    src="image/cards/Rocket_Mini.svg"
+                    alt="Rocket mini"
+                    class="card-img-top w-auto h-auto"
+                  />
                   <h2 class="card-title">Early stage startup</h2>
-                  <p class="card-text">Need your accounting system set up? Learn financial best practice and prime your business for the next stage of growth. We get you moving quickly with an accounting solution that does what you need.</p>
+                  <p class="card-text">
+                    Need your accounting system set up? Learn financial best
+                    practice and prime your business for the next stage of
+                    growth. We get you moving quickly with an accounting
+                    solution that does what you need.
+                  </p>
                 </div>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="card">
                 <div class="card-body">
-                  <img src="image/cards/Rocket_Normal.svg" alt="Rocket normal" class="card-img-top">
+                  <img
+                    src="image/cards/Rocket_Normal.svg"
+                    alt="Rocket normal"
+                    class="card-img-top w-auto h-auto"
+                  />
                   <h2 class="card-title">Scale up</h2>
-                  <p class="card-text">Spend less time worrying about your finances and more time shaping your company’s future. Get your bookkeeping, R&D credits and CFO problems, solved.</p>
+                  <p class="card-text">
+                    Spend less time worrying about your finances and more time
+                    shaping your company’s future. Get your bookkeeping, R&D
+                    credits and CFO problems, solved.
+                  </p>
                 </div>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="card">
                 <div class="card-body">
-                  <img src="image/cards/Rocket_Hight.svg" alt="Rocket hight" class="card-img-top">
+                  <img
+                    src="image/cards/Rocket_Hight.svg"
+                    alt="Rocket hight"
+                    class="card-img-top w-auto h-auto"
+                  />
                   <h2 class="card-title">High growth</h2>
-                  <p class="card-text">Gain the financial accuracy, visibility, and real-time analysis you need to make smarter decisions, drive efficiency, and achieve total organizational alignment.</p>
+                  <p class="card-text">
+                    Gain the financial accuracy, visibility, and real-time
+                    analysis you need to make smarter decisions, drive
+                    efficiency, and achieve total organizational alignment.
+                  </p>
                 </div>
               </div>
             </div>
@@ -181,81 +282,136 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="card">
-              <div class="card-body">
-                <img src="image/brands/Frizzenti.svg" alt="Frizzenti" class="card-img">
+              <div class="card-body d-flex justify-content-center">
+                <img
+                  src="image/brands/Frizzenti.svg"
+                  alt="Frizzenti"
+                  class="card-img w-auto h-auto"
+                />
               </div>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="card">
-              <div class="card-body">
-                <img src="image/brands/Yemy.svg" alt="Yemy" class="card-img">
+              <div class="card-body d-flex justify-content-center">
+                <img
+                  src="image/brands/Yemy.svg"
+                  alt="Yemy"
+                  class="card-img w-auto h-auto"
+                />
               </div>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="card">
-              <div class="card-body">
-                <img src="image/brands/Fell.svg" alt="Feel" class="card-img">
+              <div class="card-body d-flex justify-content-center">
+                <img
+                  src="image/brands/Fell.svg"
+                  alt="Feel"
+                  class="card-img w-auto h-auto"
+                />
               </div>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="card">
-              <div class="card-body">
-                <img src="image/brands/Manyone.svg" alt="Manyone" class="card-img">
+              <div class="card-body d-flex justify-content-center">
+                <img
+                  src="image/brands/Manyone.svg"
+                  alt="Manyone"
+                  class="card-img w-auto h-auto"
+                />
               </div>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="card">
-              <div class="card-body">
-                <img src="image/brands/Olio.svg" alt="Olio" class="card-img">
+              <div class="card-body d-flex justify-content-center">
+                <img
+                  src="image/brands/Olio.svg"
+                  alt="Olio"
+                  class="card-img w-auto h-auto"
+                />
               </div>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="card">
-              <div class="card-body">
-                <img src="image/brands/Buffer.svg" alt="Buffer" class="card-img">
+              <div class="card-body d-flex justify-content-center">
+                <img
+                  src="image/brands/Buffer.svg"
+                  alt="Buffer"
+                  class="card-img w-auto h-auto"
+                />
               </div>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="card">
-              <div class="card-body">
-                <img src="image/brands/Beam.svg" alt="Beam" class="card-img">
+              <div class="card-body d-flex justify-content-center">
+                <img
+                  src="image/brands/Beam.svg"
+                  alt="Beam"
+                  class="card-img w-auto h-auto"
+                />
               </div>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="card">
-              <div class="card-body">
-                <img src="image/brands/Fuel_Ventures.svg" alt="Fuel Ventures" class="card-img">
+              <div class="card-body d-flex justify-content-center">
+                <img
+                  src="image/brands/Fuel_Ventures.svg"
+                  alt="Fuel Ventures"
+                  class="card-img w-auto h-auto"
+                />
               </div>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="card">
-              <div class="card-body">
-                <img src="image/brands/Chaser.svg" alt="Chaser" class="card-img">
+              <div class="card-body d-flex justify-content-center">
+                <img
+                  src="image/brands/Chaser.svg"
+                  alt="Chaser"
+                  class="card-img w-auto h-auto"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="container d-flex justify-content-center align-items-center ac-hub">
-        <div class="container p-0">
-          <h1>The AC Hub</h1>
-          <p>Explore our dedicated online resources. We've got the tips, tricks and online accounting know-how for business success.</p>
-          <button>View Hub</button>
+      <div
+        class="
+          container
+          d-flex
+          justify-content-center
+          align-items-center
+          ac-hub
+        "
+      >
+        <div class="container">
+          <div class="container">
+            <h1>The AC Hub</h1>
+            <p>
+              Explore our dedicated online resources. We've got the tips, tricks
+              and online accounting know-how for business success.
+            </p>
+            <button>View Hub</button>
+          </div>
         </div>
-        <div class="container d-flex justify-content-end">
-          <img src="image/AC_Hub.svg" alt="AC Hub image">
+        <div class="container d-flex justify-content-end image">
+          <img
+            src="image/AC_Hub.svg"
+            alt="AC Hub image"
+            class="w-auto h-auto"
+          />
         </div>
       </div>
       <div class="container start-switch">
-        <div class="container d-flex justify-content-between align-items-center">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
           <div class="text">
             <h1>Ready to Switch? It's simple.</h1>
             <p>Speak to an expert today</p>
@@ -268,7 +424,11 @@
       <footer>
         <div class="container container-footer">
           <div class="container d-flex align-items-center icon">
-            <img src="image/Accountancy_Icon_White.svg" alt="Accountancy Icon">
+            <img
+              src="image/Accountancy_Icon_White.svg"
+              alt="Accountancy Icon"
+              class="w-auto h-auto"
+            />
             <h2>Your new finance team</h2>
           </div>
           <div class="row">
@@ -334,18 +494,20 @@
                 </div>
               </div>
             </div>
-          </div>                 
-          <div class="container d-flex p-0" >
+          </div>
+          <div class="container d-flex p-0">
             <div class="container d-flex align-items-end p-0 dmca">
               <a>© Accountancy Cloud 2021</a>
               <a>Privacy Policy & Cookies</a>
               <a>Terms of Service</a>
             </div>
-            <img src="image/Acca.svg" alt="AC Hub image">
+          </div>
+          <div class="container acca-icon-container">
+            <img src="image/Acca.svg" alt="AC Hub image" class="acca-icon" />
           </div>
         </div>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
-
 </html>

@@ -25,6 +25,36 @@ a {
   cursor: pointer;
 }
 
+.hamburger-container {
+  justify-content: flex-end;
+  align-items: start;
+  position: fixed;
+  display: none;
+  z-index: 50;
+  right: 0;
+  top: 0;
+}
+
+.container-navigation {
+  width: 0;
+  height: 100vh;
+  transition: 250ms;
+}
+
+.active {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container-navigation a {
+  padding: 20px 40px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 28px;
+  color: white !important;
+  text-shadow: 0 0 2px white;
+}
+
 .body {
   width: 100%;
 }
@@ -51,6 +81,10 @@ a {
 
 .navigation a:hover::after {
   width: 100%;
+}
+
+.accountancy-icon img {
+  max-width: none !important;
 }
 
 .container.header-button .button {
@@ -119,9 +153,7 @@ a {
 }
 
 .container-talk-to-us {
-  top: 615px;
-  z-index: 1;
-  margin: 0 24px;
+  z-index: 10;
 }
 
 .container-talk-to-us h4 {
@@ -150,8 +182,14 @@ a {
   color: black;
 }
 
+.line {
+  display: flex;
+  justify-content: center;
+  bottom: 15px;
+  pointer-events: none;
+}
+
 hr {
-  top: 688px;
   height: 2px !important;
   border: none;
   width: 100%;
@@ -446,10 +484,85 @@ footer .container-footer {
 }
 
 .container-footer .dmca {
+  z-index: 1;
+  margin-top: 40px;
   column-gap: 27px;
   color: #c5e9ea;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
+}
+
+.acca-icon-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 1400px) {
+  .hamburger-container {
+    display: flex;
+  }
+
+  header .navigation-login {
+    display: none !important;
+  }
+
+  .finances .text-image,
+  .brends,
+  .ac-hub {
+    flex-wrap: wrap;
+  }
+
+  .finances .image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .brends .text {
+    text-align: center;
+    margin-right: auto;
+  }
+
+  .ac-hub .image {
+    margin-top: 40px;
+    justify-content: center !important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .finances .text-image h1,
+  .best-finance .text h1 {
+    font-size: 42px;
+  }
+
+  .finances .text-image p,
+  .best-finance .text p {
+    font-size: 18px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .best-finance {
+    flex-wrap: wrap;
+  }
+
+  .best-finance .text {
+    margin-top: 60px;
+  }
+
+  .ac-hub p {
+    margin-bottom: 20px;
+  }
+
+  .start-switch .container {
+    flex-wrap: wrap;
+  }
+
+  .container-footer .row .col-3 {
+    width: 50%;
+  }
 }
